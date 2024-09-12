@@ -1,8 +1,8 @@
-import React from 'react'
-import { AuroraBackground } from './ui/AuroraBackground'
-import DotBackground from './ui/DotBackground';
-import GradientButton from './ui/GradientButton';
-import { TextGenerateEffect } from './ui/TextGenerateEffect';
+import React from "react";
+import { AuroraBackground } from "./ui/AuroraBackground";
+import DotBackground from "./ui/DotBackground";
+import GradientButton from "./ui/GradientButton";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
@@ -31,6 +31,6 @@ const Hero = () => {
       </AuroraBackground>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;
