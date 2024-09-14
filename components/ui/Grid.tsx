@@ -6,6 +6,7 @@ import { TextRevealCard } from "./TextRevealCard";
 import GridBackground from "./GridBackground";
 import { GradientBackground } from "./GradientBackground";
 import GradientButton from "./GradientButton";
+import DotBackground from "./DotBackground";
 const Grid = () => {
   return (
     <div className="h-auto w-[90%]  grid grid-cols-5 grid-rows-3 gap-5 z-20">
@@ -41,17 +42,21 @@ const Grid = () => {
         />
       </div>
       <div className="border-[0.1px] border-gray-700 rounded-2xl col-span-2">
-        <GradientBackground>
-          <div className="absolute z-50 inset-0 flex items-center justify-center flex-col font-bold px-4 pointer-events-none  text-center ">
-            <p className="bg-clip-text text-transparent drop-shadow-2xl text-white text-[28px]">
-             Have a Project Idea?
-            </p>
-           
-          </div>
-        </GradientBackground>
+        <DotBackground>
+          <span className="text-[32px] font-bold z-20 leading-tight text-center">
+            I'm open to working across various time zones
+          </span>
+        </DotBackground>
       </div>
-      <div className="col-span-3 border-[0.5px] border-gray-700 rounded-2xl">
-        5
+      <div className="col-span-3 border-[0.5px] bg-gray-900 border-gray-700 rounded-2xl ">
+        <GridBackground>
+          <div className="h-full w-full flex justify-center align-center flex-col p-7 text-center ">
+            <span className="text-[32px] font-bold z-20 ">
+              Currently Building a Next.js
+              SaaS Application in Real-Time
+            </span>
+          </div>
+        </GridBackground>
       </div>
     </div>
   );
