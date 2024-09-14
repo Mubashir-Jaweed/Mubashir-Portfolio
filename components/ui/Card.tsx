@@ -76,7 +76,7 @@ export const Card = ({
 
   return (
     <div className="bg-[#171927] p-3 rounded-xl w-[375px]">
-      <motion.div
+      {data.imageUrl &&   <motion.div
         onMouseEnter={handleMouseEnter}
         ref={ref}
         className={cn(
@@ -122,7 +122,7 @@ export const Card = ({
             </motion.div>
           </motion.div>
         </AnimatePresence>
-      </motion.div>
+      </motion.div> }
       <div className="py-5">
         <div className="flex justify-start items-end gap-3">
           <Image
