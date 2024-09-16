@@ -10,6 +10,7 @@ const TechStack = () => {
       <span className="text-[60px] font-montserrat font-bold text-center w-[70%] leading-tight pb-20">
         The Hell is This! <span className="text-blue-500">My Tech Stack</span>
       </span>
+      
       <StarsBackground />
       <ShootingStars />
     </div>
