@@ -10,6 +10,8 @@ import ts from '@/public/ts.png'
 import next from '@/public/next.png'
 import zenixIcon from '@/public/zenixIcon.png'
 import zenix from '@/public/zenix.png'
+import wlIcon from '@/public/wlIcon.png'
+import wl from '@/public/wl.png'
 import qrIcon from '@/public/qrIcon.png'
 import qr from '@/public/qr.png'
 import tailwind from '@/public/tailwind.png'
@@ -18,15 +20,14 @@ const Projects = () => {
 
 
     const work = [
-     
       {
         id: 1,
-        imageUrl: zenix,
-        icon: zenixIcon,
+        imageUrl: wl,
+        icon: wlIcon,
         url: "",
         urlText: "Check Live App",
-        name: "Zenix Vpn - Fast Secure Vpn",
-        desc: "Zenix VPN offers fast, secure, and private internet access, protecting your online activity with just one tap. Stay safe and anonymous while browsing anywhere, anytime",
+        name: "Words Legends - Epic Words Adventure",
+        desc: "Words Legends is an engaging word puzzle game where players uncover hidden words in a letter grid, enhancing vocabulary and cognitive skills. Enjoy various themes and compete against friends for added fun!",
         techStack: [
           {
             id: 1,
@@ -48,6 +49,27 @@ const Projects = () => {
         icon: qrIcon,
         name: "QR & Barcode Scanner.io",
         desc: "QR and Barcode Scanner.io is a fast and easy-to-use tool for scanning and decoding QR codes and barcodes. Scan instantly and access information effortlessly with a simple tap.",
+        techStack: [
+          {
+            id: 1,
+            name: "Flutter",
+            image: flutter,
+          },
+          {
+            id: 2,
+            name: "Dart",
+            image: dart,
+          },
+        ],
+      },
+      {
+        id: 3,
+        imageUrl: zenix,
+        icon: zenixIcon,
+        url: "",
+        urlText: "Check Live App",
+        name: "Zenix Vpn - Fast Secure Vpn",
+        desc: "Zenix VPN offers fast, secure, and private internet access, protecting your online activity with just one tap. Stay safe and anonymous while browsing anywhere, anytime",
         techStack: [
           {
             id: 1,

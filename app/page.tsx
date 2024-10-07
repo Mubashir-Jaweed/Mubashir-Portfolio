@@ -1,4 +1,6 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import SubHero from "@/components/SubHero";
@@ -12,7 +14,9 @@ export default function Home() {
       <SubHero />
       <About/>
       <Projects/>
-      <TechStack/>
+      <Contact/>
+      <Footer/>
+      {/* <TechStack/> */}
     </main>
   );
 }
