@@ -4,8 +4,8 @@ import { StarsBackground } from "./ui/StarBackground";
 
 const SubHero = () => {
   return (
-    <div className="py-20 bg-[#000319] flex flex-col items-center justify-center relative w-full">
-      <h1 className="uppercase text-[7.800rem]  font-[700] text-center leading-[0.8] bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 via-white to-neutral-300 ">
+    <div className="py-10 bg-[#000319] flex flex-col items-center justify-center relative w-full">
+      <h1 className="uppercase md:text-[7.800rem] text-[60px]  font-[700] text-center leading-[0.8] bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 via-white to-neutral-300 ">
         <span className="py-2 text-white">
           Coding
           <br />

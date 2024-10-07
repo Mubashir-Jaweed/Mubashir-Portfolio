@@ -6,11 +6,11 @@ import { StarsBackground } from "./ui/StarBackground";
 const Contact = () => {
   return (
     <div className="py-20 bg-[#000319] flex flex-col items-center justify-center relative w-full ">
-      <span className="text-[60px] font-montserrat font-bold text-center w-[60%] leading-tight pb-5">
+      <span className="md:text-[60px] text-[30px] font-montserrat font-bold text-center lg:w-[60%] md:w-[80%] w-[90%] leading-tight pb-5">
         Are you ready to enhance and elevate your
         <span className="text-blue-500"> online presence?</span>
       </span>
-      <span className="text-md uppercase text-gray-200">
+      <span className="md:text-base lg:text-base  text-[10px] w-[90%] uppercase text-gray-200 text-center">
         Contact me today to explore how I can help you reach your goals.
       </span>
       <a href="#work">

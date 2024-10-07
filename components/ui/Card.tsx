@@ -17,8 +17,8 @@ export const Card = ({
   data: {
     imageUrl: string;
     icon: string;
-    url?:string,
-    urlText?:string,
+    url?: string;
+    urlText?: string;
     name: string;
     desc: string;
     techStack: {
@@ -75,54 +75,56 @@ export const Card = ({
   };
 
   return (
-    <div className="bg-[#171927] p-3 rounded-xl w-[375px]">
-      {data.imageUrl &&   <motion.div
-        onMouseEnter={handleMouseEnter}
-        ref={ref}
-        className={cn(
-          " w-[350px] h-60  bg-transparent rounded-lg overflow-hidden group/card relative",
-          className
-        )}>
-        <AnimatePresence mode="wait">
-          <motion.div
-            className="relative h-[300px] w-full"
-            initial="initial"
-            whileHover={direction}
-            exit="exit">
-            <motion.div className="group-hover/card:block hidden absolute inset-0 w-full h-[250px] bg-black/40 z-10 transition duration-500" />
+    <div className="bg-[#171927] p-3 rounded-xl md:w-[375px]">
+      {data.imageUrl && (
+        <motion.div
+          onMouseEnter={handleMouseEnter}
+          ref={ref}
+          className={cn(
+            "md:w-[350px] md:h-60 h-[190px]  bg-transparent rounded-lg overflow-hidden group/card relative",
+            className
+          )}>
+          <AnimatePresence mode="wait">
             <motion.div
-              variants={variants}
-              className="h-[300px] w-full relative bg-gray-50 dark:bg-black"
-              transition={{
-                duration: 0.2,
-                ease: "easeOut",
-              }}>
-              <Image
-                alt="image"
+              className="relative h-[300px] w-full"
+              initial="initial"
+              whileHover={direction}
+              exit="exit">
+              <motion.div className="group-hover/card:block hidden absolute inset-0 w-full h-[250px] bg-black/40 z-10 transition duration-500" />
+              <motion.div
+                variants={variants}
+                className="h-[300px] w-full relative bg-gray-50 dark:bg-black"
+                transition={{
+                  duration: 0.2,
+                  ease: "easeOut",
+                }}>
+                <Image
+                  alt="image"
+                  className={cn(
+                    "h-[300px] w-full object-cover scale-[1.15]",
+                    imageClassName
+                  )}
+                  width="1000"
+                  height="1000"
+                  src={data.imageUrl}
+                />
+              </motion.div>
+              <motion.div
+                variants={textVariants}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                }}
                 className={cn(
-                  "h-[300px] w-full object-cover scale-[1.15]",
-                  imageClassName
-                )}
-                width="1000"
-                height="1000"
-                src={data.imageUrl}
-              />
+                  "text-white absolute bottom-4 left-4 z-40",
+                  childrenClassName
+                )}>
+                {children}
+              </motion.div>
             </motion.div>
-            <motion.div
-              variants={textVariants}
-              transition={{
-                duration: 0.5,
-                ease: "easeOut",
-              }}
-              className={cn(
-                "text-white absolute bottom-4 left-4 z-40",
-                childrenClassName
-              )}>
-              {children}
-            </motion.div>
-          </motion.div>
-        </AnimatePresence>
-      </motion.div> }
+          </AnimatePresence>
+        </motion.div>
+      )}
       <div className="py-5">
         <div className="flex justify-start items-end gap-3">
           <Image
@@ -130,7 +132,7 @@ export const Card = ({
             src={data.icon}
             className="h-10 w-10 border border-gray-700 rounded-lg"
           />
-          <span className="text-xl">{data.name}</span>
+          <span className="md:text-xl">{data.name}</span>
         </div>
         <p className="w-full text-sm text-gray-400 pl-1 pt-2">{data.desc}</p>
         <div className="flex flex-row items-center justify-between mt-3 !mb-0 w-full">

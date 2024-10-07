@@ -12,10 +12,10 @@ export default function Home() {
     <main>
       <Hero />
       <SubHero />
-      <About/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      <About />
+      <Projects  />
+      <Contact />
+      <Footer />
       {/* <TechStack/> */}
     </main>
   );

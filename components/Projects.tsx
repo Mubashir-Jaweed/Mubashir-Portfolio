@@ -86,13 +86,13 @@ const Projects = () => {
     ];
 
   return (
-    <div className="py-20 bg-[#000319] flex flex-col items-center justify-center relative w-full ">
-      <span className="text-[60px] font-montserrat font-bold text-center w-[70%] leading-tight pb-20">
+    <div id='projects' className="py-20 bg-[#000319] flex flex-col items-center justify-center relative w-full ">
+      <span className="md:text-[60px] text-[30px] font-montserrat font-bold text-center md:w-[70%] w-[90%] leading-tight pb-20">
         Highlights of My <span className="text-blue-500">Latest Projects</span>
       </span>
       <div className="w-[90%] h-auto z-20 flex gap-10 justify-center flex-wrap">
-        {work.map((project,i)=>(
-        <Card data={project} />
+        {work.map((project, i) => (
+          <Card data={project} />
         ))}
       </div>
       <ShootingStars />
