@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Tooltip } from "./Tooltip";
@@ -15,8 +15,8 @@ export const Card = ({
   className,
 }: {
   data: {
-    imageUrl: string;
-    icon: string;
+    imageUrl: StaticImageData;
+    icon: StaticImageData;
     url?: string;
     urlText?: string;
     name: string;
@@ -24,7 +24,7 @@ export const Card = ({
     techStack: {
       id: number;
       name: string;
-      image: string;
+      image: StaticImageData;
     }[];
   };
   children?: React.ReactNode | string;
