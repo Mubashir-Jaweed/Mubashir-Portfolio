@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { SparklesCore } from "../ui/SparklesCore";
+// import { SparklesCore } from "../ui/SparklesCore";
 
 export function TextSparkles({text}:{text:string}) {
   return (

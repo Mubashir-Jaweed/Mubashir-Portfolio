@@ -1,6 +1,5 @@
 import React from "react";
 import { AuroraBackground } from "./ui/AuroraBackground";
-import DotBackground from "./ui/DotBackground";
 import GradientButton from "./ui/GradientButton";
 import { ShootingStars } from "./ui/ShootingStars";
 import { StarsBackground } from "./ui/StarBackground";

@@ -2,19 +2,19 @@ import React from 'react'
 import { ShootingStars } from './ui/ShootingStars';
 import { StarsBackground } from './ui/StarBackground';
 import { Card } from './ui/Card';
-import imageUrl from '@/public/game.png'
+// import imageUrl from '@/public/game.png'
 import dart from '@/public/dart.png'
 import flutter from '@/public/flutter.png'
-import js from '@/public/js.png'
-import ts from '@/public/ts.png'
-import next from '@/public/next.png'
+// import js from '@/public/js.png'
+// import ts from '@/public/ts.png'
+// import next from '@/public/next.png'
 import zenixIcon from '@/public/zenixIcon.png'
 import zenix from '@/public/zenix.png'
 import wlIcon from '@/public/wlIcon.png'
 import wl from '@/public/wl.png'
 import qrIcon from '@/public/qrIcon.png'
 import qr from '@/public/qr.png'
-import tailwind from '@/public/tailwind.png'
+// import tailwind from '@/public/tailwind.png'
 
 const Projects = () => {
 
@@ -92,7 +92,7 @@ const Projects = () => {
       </span>
       <div className="w-[90%] h-auto z-20 flex gap-10 justify-center flex-wrap">
         {work.map((project, i) => (
-          <Card data={project} />
+          <Card key={i} data={project} />
         ))}
       </div>
       <ShootingStars />

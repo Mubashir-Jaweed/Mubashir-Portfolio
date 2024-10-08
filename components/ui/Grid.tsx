@@ -4,8 +4,8 @@ import gameImg from "@/public/game.png";
 import Image from "next/image";
 import { TextRevealCard } from "./TextRevealCard";
 import GridBackground from "./GridBackground";
-import { GradientBackground } from "./GradientBackground";
-import GradientButton from "./GradientButton";
+// import { GradientBackground } from "./GradientBackground";
+// import GradientButton from "./GradientButton";
 import DotBackground from "./DotBackground";
 const Grid = () => {
   return (
@@ -44,7 +44,7 @@ const Grid = () => {
       <div className="border-[0.1px] border-gray-700 rounded-2xl col-span-2">
         <DotBackground>
           <span className="md:text-[32px]  text-[20px] font-bold z-20 leading-tight text-center">
-            I'm open to working across various time zones
+            I&apos;m open to working across various time zones
           </span>
         </DotBackground>
       </div>
